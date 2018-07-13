@@ -1,4 +1,4 @@
-//Author: FirstName LastName
+//Author: Jessica Franco
 
 /******************************************************************************
                                    sumDouble
@@ -16,7 +16,11 @@ sumDouble(2, 2) → 8
 
 
 function sumDouble(a, b) {
-
+  if (a === b) {
+    return (a + b) * 2;
+  } else {
+    return a + b;
+  }
 }
 
 
@@ -35,7 +39,11 @@ makes10(1, 9) → true
 
 
 function makes10(a, b) {
-
+  if (a + b === 10 || a == 10 || b == 10) {
+    return (true);
+  } else {
+  return (false);
+  }
 }
 
 
@@ -52,10 +60,15 @@ Examples:
 parrotTrouble(true, 6) → true
 parrotTrouble(true, 7) → false
 parrotTrouble(false, 6) → false
+7 <  >20
 *******************************************************************************/
 
 function parrotTrouble(talking, hour) {
-
+  if (talking && (7 > hour || 20 < hour)) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 
@@ -76,7 +89,15 @@ alarmClock(0, false) → "10:00"
 *******************************************************************************/
 
 function alarmClock(day, vacation) {
-
+  if (day >= 1 && day <= 5 && !vacation) {
+    return "7:00";
+  } else if (day >= 1 && day <= 5 && vacation) {
+  return "10:00";
+  } else if (day === 0 || day === 6 && !vacation) {
+  return "10:00";
+  } else if (day === 0 || day === 6 && vacation) {
+  return "off";
+  }
 }
 
 
@@ -98,6 +119,8 @@ caughtSpeeding(65, true) → 0
 *******************************************************************************/
 
 function caughtSpeeding(speed, isBirthday) {
+
+  
 
 }
 
