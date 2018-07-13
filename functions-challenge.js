@@ -119,9 +119,19 @@ caughtSpeeding(65, true) → 0
 *******************************************************************************/
 
 function caughtSpeeding(speed, isBirthday) {
+  // if it's my birthday, my "effective" speed is 5 mph less.
+  if (isBirthday ){
+    speed -= 5;
+  }
 
-  
 
+  if (speed <= 60) {
+    return 0;
+  } else if (speed >= 61 && speed <= 80) {
+    return 1;
+  } else {
+    return 2;
+  }
 }
 
 /****************************************************************************
