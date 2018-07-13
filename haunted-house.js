@@ -30,6 +30,7 @@ console.log("You Escaped the horror but Died! :)");
 }
 
 console.log('
+
          .--'''''''''--.
      .'      .---.      '.
     /    .-----------.    \
