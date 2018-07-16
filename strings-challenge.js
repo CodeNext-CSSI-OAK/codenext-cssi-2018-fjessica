@@ -15,7 +15,7 @@ withoutEnd("coding") → "odin"
 *******************************************************************************/
 
 function withoutEnd(str) {
-
+  return str.substring(1 , str.length -1);
 }
 
 // Test this function.
@@ -37,7 +37,13 @@ frontAgain("ed") → true
 
 
 function frontAgain(str) {
-
+  if (str.length < 2){
+    return false;
+  }
+  if (str.substring(0, 2) === str.substring(str.length -2)) {
+    return true;
+  }
+  return false;
 }
 
 // Test this function.
@@ -106,6 +112,8 @@ function withoutX2(str) {
 
 // Test this function.
 testWithoutX2();
+// console.log(frontAgain());
+// console.log(withoutEnd());
 
 /****************************************************************************
                                     Tests
