@@ -187,7 +187,6 @@ function sayNumber(num) {
 *******************************************************************************/
 function run() {
   printGreeting();
-
   let num = Number (readline.question("Insert Number between 0 and 9999 to Translate: "));
 
   console.log(sayNumber(num));
