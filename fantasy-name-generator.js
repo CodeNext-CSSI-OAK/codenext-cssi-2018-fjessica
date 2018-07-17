@@ -75,7 +75,7 @@ console.log("------------------------------------------------------------");
 console.log("");
 firstName = readline.question("Your First Name: ");
 lastName = readline.question("Your Last Name: ");
-momMaidenName = readline.question("Maiden's name: ");
+momMaidenName = readline.question("Mom's Maiden's name: ");
 cityBorn = readline.question("City you were Born: ");
 dreamCar = readline.question("Your Dream Car: ");
 street = readline.question("Street you live by: ");
